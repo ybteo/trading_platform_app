@@ -34,7 +34,7 @@ class _HistoryPageState extends State<HistoryPage> with SingleTickerProviderStat
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-       appBar: AppBar(
+      appBar: AppBar(
         title: Container(
           height: 30,
           decoration: BoxDecoration(

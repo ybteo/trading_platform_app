@@ -10,7 +10,6 @@ import 'package:trading_app/dataModel/simpleViewForexData.dart';
 import 'package:trading_app/pages/subpages/columnPageFromHomepage.dart';
 
 class Homepage extends StatefulWidget {
-  // final bool isNewlyRegistered;
   const Homepage({super.key});
 
   @override
@@ -18,9 +17,6 @@ class Homepage extends StatefulWidget {
 }
 
 class _HomepageState extends State<Homepage> with SingleTickerProviderStateMixin {
-  // List<Map<String, dynamic>> forexData = [];
-  // List<Map<String, dynamic>> filteredForexData = [];
-
   Timer? _timer;
   bool isLoading = true;
   String message = "";
