@@ -7,7 +7,7 @@ import 'package:trading_app/const/constant.dart';
 import 'package:trading_app/const/textstyle.dart';
 import 'package:trading_app/dataModel/currency_pair_datamodel.dart';
 import 'package:trading_app/dataModel/simple_view_forexdata.dart';
-import 'package:trading_app/pages/subpages/columnPageFromHomepage.dart';
+import 'package:trading_app/pages/subpages/column_page_from_homepage.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
