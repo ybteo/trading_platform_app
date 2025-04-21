@@ -393,21 +393,25 @@ class _ChartsPageState extends State<ChartsPage> {
     showModalBottomSheet(
       backgroundColor: Colors.white,
       context: context, 
+      isScrollControlled: true, //new
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(15),
       ),
       builder: (context){
-        return Padding(
-          padding: const EdgeInsets.all(8),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              _buildCategory('Minutes', ['M1', 'M2', 'M3', 'M4', 'M5', 'M6', 'M10', 'M12', 'M15', 'M20', 'M30']),
-              const SizedBox(height: 8),
-              _buildCategory('Hours', ['H1', 'H2', 'H3', 'H4', 'H6', 'H8', 'H12']),
-              const SizedBox(height: 8),
-              _buildCategory('Days', ['D1', 'W1', 'MN']),
-            ],
+        return FractionallySizedBox(//adjust the bottom sheet height
+          heightFactor: 0.45, //adjust the no here
+          child: Padding(
+            padding: const EdgeInsets.all(8),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                _buildCategory('Minutes', ['M1', 'M2', 'M3', 'M4', 'M5', 'M6', 'M10', 'M12', 'M15', 'M20', 'M30']),
+                const SizedBox(height: 8),
+                _buildCategory('Hours', ['H1', 'H2', 'H3', 'H4', 'H6', 'H8', 'H12']),
+                const SizedBox(height: 8),
+                _buildCategory('Days', ['D1', 'W1', 'MN']),
+              ],
+            ),
           ),
         );
       }
