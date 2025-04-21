@@ -6,6 +6,7 @@ import 'package:trading_app/pages/settings_pages/general_settings.dart';
 import 'package:trading_app/pages/settings_pages/journal.dart';
 import 'package:trading_app/pages/settings_pages/languages_page.dart';
 import 'package:trading_app/pages/settings_pages/mailnbox.dart';
+import 'package:trading_app/pages/settings_pages/message_page.dart';
 import 'package:trading_app/pages/settings_pages/news_page.dart';
 import 'package:trading_app/widget/settingsDetails.dart';
 
@@ -89,7 +90,14 @@ class _SettingsPageState extends State<SettingsPage> {
 
               SettingsDetails(
                 topic: 'Chat and Messages', 
-                onPress: (){}, 
+                onPress: (){
+                  Navigator.push(
+                    context, 
+                    MaterialPageRoute(
+                      builder: (context)=> const MessagePage(),
+                    ),
+                  );
+                }, 
                 imageIcon: 'assets/image/chat_right_icon.png'
               ),
               Divider(thickness: 1, color: grey.shade300, height: 0, indent: 50),
@@ -171,8 +179,7 @@ class _SettingsPageState extends State<SettingsPage> {
               Divider(thickness: 1, color: grey.shade300, height: 0, indent: 50),
               const SizedBox(height: 30),
           
-          
-          
+                
             ],
           ),
         ),
