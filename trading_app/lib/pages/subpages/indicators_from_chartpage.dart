@@ -1,9 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:trading_app/const/constant.dart';
 import 'package:trading_app/const/textstyle.dart';
-import 'package:trading_app/pages/subpages/moreIndicators.dart';
+import 'package:trading_app/pages/subpages/more_indicators.dart';
 
 class IndicatorPage extends StatefulWidget {
   const IndicatorPage({super.key});

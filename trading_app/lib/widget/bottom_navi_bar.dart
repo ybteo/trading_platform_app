@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:trading_app/const/buttonWidget.dart';
+import 'package:trading_app/const/button_widget.dart';
 import 'package:trading_app/const/constant.dart';
 import 'package:trading_app/const/textstyle.dart';
 import 'package:trading_app/pages/chartpage.dart';

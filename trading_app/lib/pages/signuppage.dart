@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:trading_app/const/buttonWidget.dart';
+import 'package:trading_app/const/button_widget.dart';
 import 'package:trading_app/const/constant.dart';
 import 'package:trading_app/const/textstyle.dart';
-import 'package:trading_app/widget/bottomNaviBar.dart';
+import 'package:trading_app/widget/bottom_navi_bar.dart';
 
 class SignUpPage extends StatefulWidget {
   const SignUpPage({super.key});

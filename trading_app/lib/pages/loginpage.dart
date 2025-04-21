@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:trading_app/const/constant.dart';
 import 'package:trading_app/const/textstyle.dart';
 import 'package:trading_app/pages/signuppage.dart';
-import 'package:trading_app/widget/bottomNaviBar.dart';
+import 'package:trading_app/widget/bottom_navi_bar.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});

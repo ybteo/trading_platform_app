@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:trading_app/const/buttonWidget.dart';
+import 'package:trading_app/const/button_widget.dart';
 import 'package:trading_app/const/constant.dart';
 import 'package:trading_app/const/textstyle.dart';
-import 'package:trading_app/pages/subpages/addTradePage.dart';
+import 'package:trading_app/pages/subpages/add_trade_page.dart';
 
 class TradePage extends StatefulWidget {
   const TradePage({super.key});

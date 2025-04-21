@@ -1,13 +1,12 @@
 import 'dart:convert';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 import 'package:http/http.dart' as http;
 import 'package:trading_app/const/constant.dart';
 import 'package:trading_app/const/textstyle.dart';
-import 'package:trading_app/pages/subpages/indicatorsFromChartPage.dart';
-import 'package:trading_app/pages/subpages/objectFromChartPage.dart';
+import 'package:trading_app/pages/subpages/indicators_from_chartpage.dart';
+import 'package:trading_app/pages/subpages/object_from_chartpage.dart';
 
 class ChartsPage extends StatefulWidget {
   const ChartsPage({super.key});
@@ -132,6 +131,7 @@ class _ChartsPageState extends State<ChartsPage> {
 
     try {
       final response = await http.get(Uri.parse(apiUrl));
+
       print('Response Code: ${response.statusCode}');
       print('Response Body: ${response.body}');
 

@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -73,7 +72,7 @@ class _ColorSettingsState extends State<ColorSettings> {
               onColorChanged: (Color color){
                 tempColor = color;
               },
-              showLabel: true,
+              // showLabel: true,
               pickerAreaHeightPercent: 0.8,
             ),
           ),

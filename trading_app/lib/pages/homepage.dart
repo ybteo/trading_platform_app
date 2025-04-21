@@ -5,8 +5,8 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
 import 'package:trading_app/const/constant.dart';
 import 'package:trading_app/const/textstyle.dart';
-import 'package:trading_app/dataModel/currencyPairData.dart';
-import 'package:trading_app/dataModel/simpleViewForexData.dart';
+import 'package:trading_app/dataModel/currency_pair_datamodel.dart';
+import 'package:trading_app/dataModel/simple_view_forexdata.dart';
 import 'package:trading_app/pages/subpages/columnPageFromHomepage.dart';
 
 class Homepage extends StatefulWidget {
@@ -169,7 +169,7 @@ class _HomepageState extends State<Homepage> with SingleTickerProviderStateMixin
           return;
         } else {
           final now = DateTime.now();
-          if(lastInvalidDataAlertTime == null || now.difference(lastInvalidDataAlertTime!) > Duration(minutes: 2)){
+          if(lastInvalidDataAlertTime == null || now.difference(lastInvalidDataAlertTime!) > const Duration(minutes: 2)){
             showMessage("Invalid data received: No time series found");
             lastInvalidDataAlertTime = now;
           }

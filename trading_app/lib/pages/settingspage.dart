@@ -8,7 +8,7 @@ import 'package:trading_app/pages/settings_pages/languages_page.dart';
 import 'package:trading_app/pages/settings_pages/mailnbox.dart';
 import 'package:trading_app/pages/settings_pages/message_page.dart';
 import 'package:trading_app/pages/settings_pages/news_page.dart';
-import 'package:trading_app/widget/settingsDetails.dart';
+import 'package:trading_app/widget/settings_details.dart';
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key});

@@ -34,7 +34,7 @@ class _MessagePageState extends State<MessagePage> {
           _chatDisplay('Trade Club', 'Latest trading news: ...'),
 
         ],
-      )
+      ),
     );
   }
 
@@ -64,8 +64,6 @@ class _MessagePageState extends State<MessagePage> {
       ],
     );
   }
-
-
 
 
 }

@@ -1,10 +1,8 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:trading_app/const/buttonWidget.dart';
+import 'package:trading_app/const/button_widget.dart';
 import 'package:trading_app/const/constant.dart';
 import 'package:trading_app/const/textstyle.dart';
-import 'package:trading_app/pages/subpages/currencyPairPage.dart';
+import 'package:trading_app/pages/subpages/currency_pair_page.dart';
 
 class AddTradePage extends StatefulWidget {
   const AddTradePage({super.key});

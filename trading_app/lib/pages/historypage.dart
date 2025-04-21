@@ -3,7 +3,7 @@ import 'package:intl/intl.dart';
 
 import 'package:trading_app/const/constant.dart';
 import 'package:trading_app/const/textstyle.dart';
-import 'package:trading_app/pages/subpages/historyFromHistoryPage.dart';
+import 'package:trading_app/pages/subpages/history_from_history_page.dart';
 
 class HistoryPage extends StatefulWidget {
   const HistoryPage({super.key});
@@ -41,7 +41,7 @@ class _HistoryPageState extends State<HistoryPage> with SingleTickerProviderStat
             color: grey.shade200,
             borderRadius: BorderRadius.circular(8)
           ),
-          child: Container(
+          child: SizedBox(
             width: 265, height: 40,
             child: Padding(
               padding: const EdgeInsets.symmetric(vertical: 5.0),
