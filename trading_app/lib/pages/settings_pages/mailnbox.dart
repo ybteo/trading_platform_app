@@ -38,7 +38,7 @@ class _MailInboxPageState extends State<MailInboxPage> {
         children: [
           ListTile(
             title: const Text('Welcome to the trading platform', style: bodySRegular),
-            subtitle: Row(
+            subtitle: Row( 
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text('Trading platform', style: bodyXSRegular.copyWith(color: grey.shade800),),

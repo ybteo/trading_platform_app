@@ -65,37 +65,6 @@ class _HomepageState extends State<Homepage> with SingleTickerProviderStateMixin
     _tabController.dispose();
     super.dispose();
   }
-
-/*   void didChangeDependencies(){
-    super.didChangeDependencies();
-    if(widget.isNewlyRegistered && !_dialogShown){
-      _dialogShown = true;
-
-      WidgetsBinding.instance.addPostFrameCallback((_) {
-        showDialog(
-          context: context, 
-          builder: (context) =>  AlertDialog(
-            title: Text('Welcome to TradingXXX', style: heading5Bold),
-            content: Column(
-              children: [
-                Text('XXX is a software development company and does not provide any financial, investment, brokerage or trading services.', style: bodyXSRegular),
-                SizedBox(height: 10),
-                Text('By pressing the ACCEPT button, I agree with the terms and conditions of the EULA, the Privacy Policy and the Disclaimer.'),
-
-              ],
-            ),
-            actions: [
-              BlueButton(
-                onPressed: (){}, 
-                text: 'ACCEPT'
-              )
-            ],
-          ),
-        );
-      });
-    }
-  } */
-
   
 
   Future<void> fetchForexDigitData() async {
@@ -262,7 +231,6 @@ class _HomepageState extends State<Homepage> with SingleTickerProviderStateMixin
 
   @override
   Widget build(BuildContext context) {
-    // List<CurrencyPairData> displayData = isApiFetched ? forexData: mockForexData;
 
     return DefaultTabController(
       length: 2,

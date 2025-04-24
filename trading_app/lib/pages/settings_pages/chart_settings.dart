@@ -92,9 +92,6 @@ class _ChartSettingsState extends State<ChartSettings> {
       });
   }
 
-
-
-
   void _saveSwitchStates(String key, bool value) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     prefs.setBool(key, value);
